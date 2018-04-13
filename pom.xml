@@ -6,6 +6,33 @@
 	<artifactId>SpringRestfulWebserviceHibernate</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+	<name>SpringHibernateTest</name>
+	
+	<build>
+		<finalName>ROOT</finalName>
+		<sourceDirectory>src</sourceDirectory>
+			<plugins>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.7.0</version>
+
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>3.0.0</version>
+
+					<configuration>
+						<warSourceDirectory>src/main/webapp</warSourceDirectory>
+						<failOnMissingWebXml>false</failOnMissingWebXml>
+					</configuration>
+				</plugin>
+			</plugins>
+	</build>
 
 	<dependencies>
 		<dependency>
@@ -42,7 +69,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.45</version>
+			<version>6.0.6</version>
 		</dependency>
 
 		<dependency>
@@ -75,32 +102,5 @@
 			<version>1.1.0.Final</version>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.5.1</version>
-
-					<configuration>
-						<source>1.8</source>
-						<target>1.8</target>
-					</configuration>
-				</plugin>
-
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-war-plugin</artifactId>
-					<version>2.4</version>
-
-					<configuration>
-						<warSourceDirectory>src/main/webapp</warSourceDirectory>
-						<failOnMissingWebXml>false</failOnMissingWebXml>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
 
 </project>
