@@ -36,9 +36,11 @@ public class HibernateConfig {
 		//ds.setUrl("jdbc:mysql://localhost:3306/springrestful");
 		ds.setUrl("jdbc:mysql://jws-app-mysql:3306/springrestful");
 		//ds.setUrl("jdbc:mysql://103.241.144.158:3306/youdontb_school");
-		ds.setUsername("root");
+		//ds.setUsername("root");
+		ds.setUsername("user");
 		//ds.setUsername("youdontb_sch");
-		ds.setPassword("root");
+		//ds.setPassword("");
+		ds.setPassword("password");
 		//ds.setPassword("njl(eQ}kqL8+");
 
 		return ds;
